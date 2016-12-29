@@ -1,0 +1,8 @@
+#ignore folders
+src
+config
+build
+node_modules
+.vscode
+#ignore files
+
