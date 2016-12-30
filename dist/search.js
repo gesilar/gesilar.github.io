@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7e699e591c9af9af1c3e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ca8937710f6b0816374f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8410,7 +8410,7 @@
 	
 	            return _react2.default.createElement(
 	                "div",
-	                { className: "priceTable" },
+	                { className: "priceTable", hash: "#search" },
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "searchBar" },
@@ -8422,6 +8422,11 @@
 	                            } },
 	                        "\u641C\u7D22"
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    "\u5171" + this.state.showList.length + "\u7ED3\u679C"
 	                ),
 	                _react2.default.createElement(
 	                    "div",
