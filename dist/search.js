@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2ac53fa4d2111754c593"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6c485bdaacedb30b452c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8502,21 +8502,25 @@
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "series" },
+	                                    "\u54C1\u724C\uFF1A",
 	                                    item.series
 	                                ),
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "name" },
+	                                    "\u54C1\u540D\uFF1A",
 	                                    item.name
 	                                ),
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "price" },
+	                                    "\u4EF7\u683C\uFF1A",
 	                                    item.price
 	                                ),
 	                                _react2.default.createElement(
 	                                    "div",
 	                                    { className: "intro" },
+	                                    "\u4ECB\u7ECD\uFF1A",
 	                                    item.intro
 	                                )
 	                            )

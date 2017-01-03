@@ -21,7 +21,8 @@
   }
 }
 .searchBar input,
-.searchBar button {
+.searchBar button,
+.searchBar select {
   font-size: 16px;
   font-family: "microsoft yahei";
 }
@@ -29,7 +30,7 @@
   margin: 5px 0;
   border: 1px solid;
   width: 100%;
-  min-height: 180px;
+  height: 180px;
 }
 .productList .table .img {
   vertical-align: top;
@@ -39,17 +40,19 @@
 }
 .productList .table .detail {
   display: inline-block;
-  width: 54%;
+  width: 55%;
+  font-size: 12px;
 }
-.productList .table .detail .series {
-  height: 45px;
-}
-.productList .table .detail .name {
-  height: 45px;
+.productList .table .detail div {
+  height: 20px;
+  line-height: 20px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
 }
 .productList .table .detail .price {
-  height: 45px;
+  height: 60px;
 }
 .productList .table .detail .intro {
-  height: 45px;
+  height: 80px;
+  border-bottom: none;
 }
