@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ca8937710f6b0816374f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "90a57ed6a7970b2829dd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8359,11 +8359,11 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _data = __webpack_require__(255);
+	var _index = __webpack_require__(255);
 	
-	var _data2 = _interopRequireDefault(_data);
+	var _index2 = _interopRequireDefault(_index);
 	
-	var _lodash = __webpack_require__(256);
+	var _lodash = __webpack_require__(261);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
@@ -8384,8 +8384,8 @@
 	        var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this));
 	
 	        _this.state = {
-	            productList: _data2.default.productList,
-	            showList: _data2.default.productList
+	            productList: _index2.default.productList,
+	            showList: _index2.default.productList
 	        };
 	        return _this;
 	    }
@@ -29747,6 +29747,44 @@
 
 /***/ },
 /* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _beautyList = __webpack_require__(256);
+	
+	var _beautyList2 = _interopRequireDefault(_beautyList);
+	
+	var _facialMask = __webpack_require__(257);
+	
+	var _facialMask2 = _interopRequireDefault(_facialMask);
+	
+	var _medicinal = __webpack_require__(258);
+	
+	var _medicinal2 = _interopRequireDefault(_medicinal);
+	
+	var _others = __webpack_require__(259);
+	
+	var _others2 = _interopRequireDefault(_others);
+	
+	var _skinCare = __webpack_require__(260);
+	
+	var _skinCare2 = _interopRequireDefault(_skinCare);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	exports.default = {
+	    productList: [].concat(_toConsumableArray(_beautyList2.default), _toConsumableArray(_facialMask2.default), _toConsumableArray(_medicinal2.default), _toConsumableArray(_others2.default), _toConsumableArray(_skinCare2.default))
+	};
+
+/***/ },
+/* 256 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -29754,55 +29792,251 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	var data = {
-	    productList: [{
-	        imgName: "test.jpg", //这个对应你命名的图片名称
-	        series: "奶粉系列",
-	        name: "asdfasdf",
-	        price: "2.4",
-	        intro: "123adsfaas" //备注信息
-	    }, //这个都好别漏了
-	    {
-	        imgName: "test.jpg", //这个对应你命名的图片名称
-	        series: "面膜",
-	        name: "asdfasdf",
-	        price: "asdfasdf",
-	        intro: "asdfasdf" //备注信息
-	    }, //这个都好别漏了
-	    {
-	        imgName: "test.jpg", //这个对应你命名的图片名称
-	        series: "豆浆",
-	        name: "asdfasdf",
-	        price: "2.4",
-	        intro: "123adsfaas" //备注信息
-	    }, //这个都好别漏了
-	    {
-	        imgName: "test.jpg", //这个对应你命名的图片名称
-	        series: "奶粉系列",
-	        name: "asdfasdf",
-	        price: "asdfasdf",
-	        intro: "asdfasdf" //备注信息
-	    }, //这个都好别漏了
-	    {
-	        imgName: "test.jpg", //这个对应你命名的图片名称
-	        series: "油条",
-	        name: "asdfasdf",
-	        price: "2.4",
-	        intro: "123adsfaas" //备注信息
-	    }, //这个都好别漏了
-	    {
-	        imgName: "test.jpg", //这个对应你命名的图片名称
-	        series: "奶粉系列",
-	        name: "asdfasdf",
-	        price: "asdfasdf",
-	        intro: "asdfasdf" //备注信息
-	    }]
-	};
+	// 美妆
+	var productList = [{
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "魔法森林",
+	    name: "魔法森林 SRD03",
+	    price: "80",
+	    intro: "123adsfaas" }, //这个都好别漏了
+	{
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "迪奥",
+	    name: "魅惑（变色）唇彩（01，04）",
+	    price: "240（单品）450（01，04组合套盒）",
+	    intro: "asdfasdf" //备注信息
+	}];
 	
-	exports.default = data;
+	exports.default = productList;
 
 /***/ },
-/* 256 */
+/* 257 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var productList = [{
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "JAYJUN",
+	    name: "JAYJUN水光针面膜",
+	    price: "96",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "SNP",
+	    name: "SNP燕窝面膜",
+	    price: "75",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "Paparecipe",
+	    name: "Paparecipe春雨面膜",
+	    price: "黄79，白89，黑89，粉65（5片）",
+	    intro: "除了粉色为5片，其余都为10片" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "嘉娜宝",
+	    name: "嘉娜宝	肌美精面膜",
+	    price: "55",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "Innisfree（悦诗风吟）",
+	    name: "Innisfree（悦诗风吟）	胶囊面膜",
+	    price: "25",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "森田",
+	    name: "森田	药妆面膜",
+	    price: "65",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "伊思",
+	    name: "伊思	蜗牛面膜",
+	    price: "99",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "丽得姿",
+	    name: "丽得姿	保湿面膜",
+	    price: "48（1盒）85（两盒）",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "可莱丝",
+	    name: "可莱丝	保湿面膜",
+	    price: "85",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "我的美丽日记",
+	    name: "我的美丽日记	面膜",
+	    price: "60",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "forencos",
+	    name: "forencos	七天面膜",
+	    price: "80",
+	    intro: "123adsfaas" }];
+	
+	exports.default = productList;
+
+/***/ },
+/* 258 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var productList = [{
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "蚬壳胃散",
+	    name: "蚬壳胃散",
+	    price: "60",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "和兴白花油",
+	    name: "和兴白花油",
+	    price: "54",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "小林退热贴",
+	    name: "小林退热贴婴儿12片，儿童12片",
+	    price: "46",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "小林退热贴",
+	    name: "小林退热贴承认6片",
+	    price: "25",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "虎标肩颈舒",
+	    name: "虎标肩颈舒",
+	    price: "45",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "橙树化痰素",
+	    name: "橙树化痰素",
+	    price: "80",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "日本龙角散",
+	    name: "日本龙角散",
+	    price: "80",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "五蜈蚣标止咳丸",
+	    name: "五蜈蚣标止咳丸",
+	    price: "70（10包）82（12包）",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "黄道益活络油",
+	    name: "黄道益活络油（50ml）",
+	    price: "55",
+	    intro: "123adsfaas" }];
+	
+	exports.default = productList;
+
+/***/ },
+/* 259 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	   value: true
+	});
+	var productList = [];
+	
+	exports.default = productList;
+
+/***/ },
+/* 260 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var productList = [{
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "雅漾",
+	    name: "雅漾大喷300ml",
+	    price: "300ml：99（1瓶）190（2瓶），150ml:65",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "兰蔻",
+	    name: "兰蔻 温和保湿水(粉水)",
+	    price: "400ml：280，200ml：180",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "兰芝",
+	    name: "兰芝睡眠面膜",
+	    price: "150",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "芭妮兰",
+	    name: "卸妆膏",
+	    price: "88（1盒）168（2盒）",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "娇韵诗",
+	    name: "水润活肌保湿精华",
+	    price: "470",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "娇韵诗",
+	    name: "水润活肌保湿霜",
+	    price: "390",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "德国贺本清",
+	    name: "护手霜（长条形）",
+	    price: "100ML：55（1件）100（2件），75ml：45（1件）85（2件）",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "德国贺本清",
+	    name: "护手霜（圆形）75ml",
+	    price: "30",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "马油",
+	    name: "GUERISSON马油",
+	    price: "90",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "马油",
+	    name: "GUERISSON马油",
+	    price: "90",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "城野医生",
+	    name: "城野医生	毛孔收敛水",
+	    price: "235",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "Nature Public",
+	    name: "Nature Public	芦荟胶",
+	    price: "27",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "依云",
+	    name: "依云大喷",
+	    price: "60",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "贝德玛",
+	    name: "贝德玛卸妆水",
+	    price: "128",
+	    intro: "123adsfaas" }, {
+	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    series: "碧唇",
+	    name: "碧唇小蓝罐",
+	    price: "16",
+	    intro: "123adsfaas" }];
+	exports.default = productList;
+
+/***/ },
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};/**

@@ -39,6 +39,7 @@
 }
 .productList .table .detail {
   display: inline-block;
+  width: 54%;
 }
 .productList .table .detail .series {
   height: 45px;
