@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "90a57ed6a7970b2829dd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2ac53fa4d2111754c593"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8361,13 +8361,17 @@
 	
 	var _index = __webpack_require__(255);
 	
-	var _index2 = _interopRequireDefault(_index);
+	var allList = _interopRequireWildcard(_index);
 	
 	var _lodash = __webpack_require__(261);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -8383,31 +8387,47 @@
 	
 	        var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this));
 	
+	        var beautyList = allList.beautyList,
+	            facialMask = allList.facialMask,
+	            medicinal = allList.medicinal,
+	            others = allList.others,
+	            skinCare = allList.skinCare;
+	
+	        var productList = [].concat(_toConsumableArray(beautyList), _toConsumableArray(facialMask), _toConsumableArray(medicinal), _toConsumableArray(others), _toConsumableArray(skinCare));
 	        _this.state = {
-	            productList: _index2.default.productList,
-	            showList: _index2.default.productList
+	            productList: productList,
+	            type: "all",
+	            key: ""
 	        };
 	        return _this;
 	    }
 	
 	    _createClass(Search, [{
-	        key: "search",
-	        value: function search(key) {
-	            if (key === "") {
-	                this.setState({ showList: this.state.productList });
-	                return;
+	        key: "getShowList",
+	        value: function getShowList() {
+	            var key = this.state.key;
+	            var originList = [];
+	            var showList = [];
+	            if (this.state.type === "all") {
+	                originList = this.state.productList;
+	            } else {
+	                originList = allList[this.state.type];
 	            }
-	            var showList = _lodash2.default.filter(this.state.productList, function (item) {
-	
-	                return item.name.indexOf(key) !== -1 || item.series.indexOf(key) !== -1;
-	            });
-	            this.setState({ showList: showList });
+	            if (key === "") {
+	                showList = originList;
+	            } else {
+	                showList = _lodash2.default.filter(originList, function (item) {
+	                    return item.name.indexOf(key) !== -1 || item.series.indexOf(key) !== -1;
+	                });
+	            }
+	            return showList;
 	        }
 	    }, {
 	        key: "render",
 	        value: function render() {
 	            var _this2 = this;
 	
+	            var showList = this.getShowList();
 	            return _react2.default.createElement(
 	                "div",
 	                { className: "priceTable", hash: "#search" },
@@ -8418,20 +8438,56 @@
 	                    _react2.default.createElement(
 	                        "button",
 	                        { onClick: function onClick() {
-	                                _this2.search(_this2.refs.searchKey.value);
+	                                _this2.setState({ key: _this2.refs.searchKey.value });
 	                            } },
 	                        "\u641C\u7D22"
+	                    ),
+	                    _react2.default.createElement(
+	                        "select",
+	                        { onChange: function onChange(e) {
+	                                _this2.setState({ type: e.target.value });
+	                            } },
+	                        _react2.default.createElement(
+	                            "option",
+	                            { value: "all" },
+	                            "\u5168\u90E8"
+	                        ),
+	                        _react2.default.createElement(
+	                            "option",
+	                            { value: "beautyList" },
+	                            "\u7F8E\u5986"
+	                        ),
+	                        _react2.default.createElement(
+	                            "option",
+	                            { value: "skinCare" },
+	                            "\u62A4\u80A4"
+	                        ),
+	                        _react2.default.createElement(
+	                            "option",
+	                            { value: "facialMask" },
+	                            "\u9762\u819C"
+	                        ),
+	                        _react2.default.createElement(
+	                            "option",
+	                            { value: "medicinal" },
+	                            "\u836F\u54C1"
+	                        ),
+	                        _react2.default.createElement(
+	                            "option",
+	                            { value: "others" },
+	                            "\u5176\u4ED6"
+	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
 	                    "div",
 	                    null,
-	                    "\u5171" + this.state.showList.length + "\u7ED3\u679C"
+	                    "\u5171" + showList.length + "\u7ED3\u679C"
 	                ),
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "productList" },
-	                    this.state.showList.map(function (item) {
+	                    showList.map(function (item) {
 	                        return _react2.default.createElement(
 	                            "div",
 	                            { className: "table" },
@@ -29754,6 +29810,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	exports.skinCare = exports.others = exports.medicinal = exports.facialMask = exports.beautyList = undefined;
 	
 	var _beautyList = __webpack_require__(256);
 	
@@ -29777,11 +29834,11 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-	
-	exports.default = {
-	    productList: [].concat(_toConsumableArray(_beautyList2.default), _toConsumableArray(_facialMask2.default), _toConsumableArray(_medicinal2.default), _toConsumableArray(_others2.default), _toConsumableArray(_skinCare2.default))
-	};
+	exports.beautyList = _beautyList2.default;
+	exports.facialMask = _facialMask2.default;
+	exports.medicinal = _medicinal2.default;
+	exports.others = _others2.default;
+	exports.skinCare = _skinCare2.default;
 
 /***/ },
 /* 256 */
