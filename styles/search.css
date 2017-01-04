@@ -44,13 +44,18 @@
   font-size: 12px;
 }
 .productList .table .detail div {
-  height: 20px;
   line-height: 20px;
   border-left: 1px solid;
   border-bottom: 1px solid;
 }
+.productList .table .detail .series {
+  height: 20px;
+}
+.productList .table .detail .name {
+  height: 40px;
+}
 .productList .table .detail .price {
-  height: 60px;
+  height: 40px;
 }
 .productList .table .detail .intro {
   height: 80px;
