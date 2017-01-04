@@ -54,7 +54,7 @@ class Search extends React.Component {
                             return (
                                 <div className="table">
                                     <div className="img">
-                                        <img src={`..\\img\\${item.imgName}`} />
+                                        <img src={`./img/${item.imgName}`} />
                                     </div>
                                     <div className="detail">
                                         <div className="series">品牌：{item.series}</div>
