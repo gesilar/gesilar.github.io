@@ -3,4 +3,5 @@
 node_modules
 .vscode
 #ignore files
+index.html
 

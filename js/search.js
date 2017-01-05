@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ac4179d8a665e07d1154"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "da44af8f62f8db449a01"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -29855,13 +29855,13 @@
 	});
 	// 美妆
 	var productList = [{
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "beauty/b001.jpg", //这个对应你命名的图片名称
 	    series: "魔法森林",
 	    name: "魔法森林 SRD03",
 	    price: "80",
 	    intro: "b001.jpg" }, //这个都好别漏了
 	{
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "beauty/b003.jpg", //这个对应你命名的图片名称
 	    series: "迪奥",
 	    name: "魅惑（变色）唇彩（01，04）",
 	    price: "240（单品）450（01，04组合套盒）",
@@ -29880,57 +29880,57 @@
 	    value: true
 	});
 	var productList = [{
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f001.jpg", //这个对应你命名的图片名称
 	    series: "JAYJUN",
 	    name: "JAYJUN水光针面膜",
 	    price: "96",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f002.jpg", //这个对应你命名的图片名称
 	    series: "SNP",
 	    name: "SNP燕窝面膜",
 	    price: "75",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f004.jpg", //这个对应你命名的图片名称
 	    series: "Paparecipe",
 	    name: "Paparecipe春雨面膜",
 	    price: "黄79，白89，黑89，粉65（5片）",
 	    intro: "除了粉色为5片，其余都为10片" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f007.jpg", //这个对应你命名的图片名称
 	    series: "嘉娜宝",
 	    name: "嘉娜宝	肌美精面膜",
 	    price: "55",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f008.jpg", //这个对应你命名的图片名称
 	    series: "Innisfree（悦诗风吟）",
 	    name: "Innisfree（悦诗风吟）	胶囊面膜",
 	    price: "25",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f009.jpg", //这个对应你命名的图片名称
 	    series: "森田",
 	    name: "森田	药妆面膜",
 	    price: "65",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f010.jpg", //这个对应你命名的图片名称
 	    series: "伊思",
 	    name: "伊思	蜗牛面膜",
 	    price: "99",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f011.jpg", //这个对应你命名的图片名称
 	    series: "丽得姿",
 	    name: "丽得姿	保湿面膜",
 	    price: "48（1盒）85（两盒）",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f012.jpeg", //这个对应你命名的图片名称
 	    series: "可莱丝",
 	    name: "可莱丝	保湿面膜",
 	    price: "85",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f001.jpg", //这个对应你命名的图片名称
 	    series: "我的美丽日记",
 	    name: "我的美丽日记	面膜",
 	    price: "60",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f001.jpg", //这个对应你命名的图片名称
 	    series: "forencos",
 	    name: "forencos	七天面膜",
 	    price: "80",
@@ -29948,47 +29948,47 @@
 	    value: true
 	});
 	var productList = [{
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m001.jpeg", //这个对应你命名的图片名称
 	    series: "蚬壳胃散",
 	    name: "蚬壳胃散",
 	    price: "60",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m002.jpg", //这个对应你命名的图片名称
 	    series: "和兴白花油",
 	    name: "和兴白花油",
 	    price: "54",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m003.jpg", //这个对应你命名的图片名称
 	    series: "小林退热贴",
 	    name: "小林退热贴婴儿12片，儿童12片",
 	    price: "46",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m003_1.jpg", //这个对应你命名的图片名称
 	    series: "小林退热贴",
 	    name: "小林退热贴承认6片",
 	    price: "25",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m004.jpg", //这个对应你命名的图片名称
 	    series: "虎标肩颈舒",
 	    name: "虎标肩颈舒",
 	    price: "45",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m005.jpeg", //这个对应你命名的图片名称
 	    series: "橙树化痰素",
 	    name: "橙树化痰素",
 	    price: "80",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m006.jpeg", //这个对应你命名的图片名称
 	    series: "日本龙角散",
 	    name: "日本龙角散",
 	    price: "80",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m007.jpg", //这个对应你命名的图片名称
 	    series: "五蜈蚣标止咳丸",
 	    name: "五蜈蚣标止咳丸",
 	    price: "70（10包）82（12包）",
 	    intro: "123adsfaas" }, {
-	    imgName: "test.jpg", //这个对应你命名的图片名称
+	    imgName: "medicinal/m008.jpeg", //这个对应你命名的图片名称
 	    series: "黄道益活络油",
 	    name: "黄道益活络油（50ml）",
 	    price: "55",

@@ -38,6 +38,9 @@
   width: 45%;
   height: 180px;
 }
+.productList .table .img img {
+  width: 100%;
+}
 .productList .table .detail {
   display: inline-block;
   width: 55%;
@@ -58,6 +61,6 @@
   height: 40px;
 }
 .productList .table .detail .intro {
-  height: 80px;
+  height: 78px;
   border-bottom: none;
 }
