@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "da44af8f62f8db449a01"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ad648400757d3194e1ef"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -29885,7 +29885,7 @@
 	    name: "JAYJUN水光针面膜",
 	    price: "96",
 	    intro: "123adsfaas" }, {
-	    imgName: "facialMask/f002.jpg", //这个对应你命名的图片名称
+	    imgName: "facialMask/f002.jpeg", //这个对应你命名的图片名称
 	    series: "SNP",
 	    name: "SNP燕窝面膜",
 	    price: "75",

@@ -7,7 +7,7 @@ const productList = [
         intro: "123adsfaas",//备注信息
     },
     {
-        imgName: "facialMask/f002.jpg",//这个对应你命名的图片名称
+        imgName: "facialMask/f002.jpeg",//这个对应你命名的图片名称
         series: "SNP",
         name: "SNP燕窝面膜",
         price: "75",
